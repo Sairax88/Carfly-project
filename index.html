@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <title>Carfly</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+             <nav class="nav_menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#services" class="menu__link">Услуги</a></li>
+                    <li class="menu__item"><a href="#about-parking" class="menu__link">О парковке</a></li>
+                    <li class="menu__item"><a href="#maps" class="menu__link">Где мы?</a></li>
+                    <li class="menu__item"><a href="#show" class="menu__link">Камеры</a></li>
+                </ul>
+                <div class="contacts">
+                    <img src="./assets/icon/WhatsApp.svg" alt="WhatsApp" class="contacts__icon">
+                    <div class="contacts__number">
+                        <p class="p_menu">+7 (921) 000-00-00</p>
+                        <p class="p_menu">8 (800) 555-35-35</p>
+                    </div>
+               </div>
+            </nav>
+        </header>
+    <section class="parking _container">
+        <div class="parking__content">
+            <div class="vector_1"></div>
+              <div class="backgraund">
+                <h1>Парковка в Пулково с трансфером <br>в аэропорт</h1>
+              </div>
+            <div class="vector"></div>
+        </div>
+    </section>
+    <section class="price _container">
+        <div class="price__cards">
+            <div class="price__card_item">
+                <p class="p__day">1 - 2 дня</p>
+                <p class="p__price">350 рублей</p>
+            </div>
+            <div class="price__card_item">
+                <p class="p__day">3 - 7 дней</p>
+                <p class="p__price">250 рублей</p>
+            </div>
+            <div class="price__card_item">
+                <p class="p__day">7 - 14 дней</p>
+                <p class="p__price">200 рублей</p>
+            </div>
+        </div>
+        <div class="price__image">
+            <img src="./assets/images/klients.png" alt="klients" class="klients">
+        </div>
+    </section>
+    <section class="date _container">
+        <div class="date__arrival">
+            <p class="p__date">Дата и время въезда (вылет - 3 часа)</p>
+            <div class="arrival">
+                 <img src="./assets/icon/calendar.svg" alt="calendar" class="date__icon">
+                <input type="date" class="date__value" value="дд/мм/гг">
+                <img src="./assets/icon/clock.svg" alt="clock" class="date__icon">
+                <input type="time" class="clock__value" value="00:00">
+            </div>
+        </div>
+        <div class="date__departure">  
+            <p class="p__date">Дата и время выезда (прилет + 1 час)</p>  
+            <div class="departure">
+                <img src="./assets/icon/calendar.svg" alt="calendar" class="date__icon">
+                <input type="date" class="date__value" value="дд/мм/гг">
+                <img src="./assets/icon/clock.svg" alt="clock" class="date__icon">
+                <input type="time" class="clock__value" value="00:00">
+            </div>
+        </div>
+        <button class="find__place">Найти место</button>
+    </section>
+    <div class="background__services">
+    <section id="services" class="services">
+            <h2 class="title">Услуги</h2>
+            <div class="content">
+                <div class="tabs">
+                    <div class="tabs__items">
+                        <a href="#tab_01" active class="tabs__item">Бесплатный трансфер</a>
+                        <a href="#tab_02" class="tabs__item">Комфортное оформление</a>
+                        <a href="#tab_03" class="tabs__item">Дополнительно</a>
+                    </div>
+                    <div class="tabs__body">
+                        <div id="tab_01" class="tabs__block">
+                            <img src="./assets/images/tabs1.png" alt="Бесплатный трансфер" class="tab__image">
+                            <div class="tabs__text">
+                                <p class="tabs__subtext">Следите онлайн за
+                                    местонахождением автобуса!</p>
+                                <p class="tabs__subtext">Вежливый водитель, 5 минут в
+                                    пути, запись происходящегов салоне для решения
+                                    конфликтных ситуаций</p>
+                                <p class="tabs__subtext">При необходимости
+                                    устанавливается детское кресло в автомобильтрансфера</p>
+                            </div>
+                        </div>
+                        <div id="tab_02" class="tabs__block">
+                            <img src="./assets/images/tabs2.png" alt="Комфортное оформление">
+                            <div class="tabs__text">
+                                <p class="tabs__subtext">Забронируйте и оплатите место
+                                    заранее и сэкономьте время на оформление на месте!</p>
+                                <p class="tabs__subtext">Комфортный офис с туалетом,
+                                    питьевой водой и Wi-Fi</p>
+                                <p class="tabs__subtext">Заключаем договор
+                                    ответственного хранения</p>
+                            </div>
+                        </div>
+                        <div id="tab_03" class="tabs__block">
+                            <img src="./assets/images/tabs3.png" alt="Дополнительно">
+                            <div class="tabs__text">
+                                <p class="tabs__subtext">Упаковка богажа. Один чемодан - бесплатно!
+                                    Каждый последующий чемодан - 200 рублей</p>
+                                <p class="tabs__subtext">Спустило колесо? Не беда -
+                                    поможем накачать!</p>
+                                <p class="tabs__subtext">Сел аккумулятор? Не беда -
+                                    поможем с запуском автомобиля</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+    </div>
+    <section id="about-parking" class="about-parking _container">
+        <h2 class="title">О парковке</h2>
+        <div class="about-parking__cards_container">
+            <div class="about-parking__cards">
+                <div class="about-parking__card_item">
+                    <p class="card__title">500</p>
+                    <p class="about-parking__card_text">машиномест</p>
+                    <div class="parking__icon_container">
+                        <img src="./assets/icon/Vector.svg" alt="icon" class="about-parking-icon">
+                    </div>
+                </div>
+                <div class="about-parking__card_item">
+                    <p class="card__title">Вежливый</p>
+                    <p class="about-parking__card_text">персонал</p>
+                    <div class="parking__icon_container">
+                        <img src="./assets/icon/noun_users_791122 2.svg" alt="icon" class="about-parking-icon">
+                    </div>
+                </div>
+                <div class="about-parking__card_item">
+                    <p class="card__title">Ответственность</p>
+                    <p class="about-parking__card_text-1">застрахована в страховой компании</p>
+                    <div class="parking__icon_container">
+                        <img src="./assets/icon/lock-check.svg" alt="icon" class="about-parking-icon">
+                    </div>
+                </div>
+                <div class="about-parking__card_item">
+                    <p class="card__title">Безопасность</p>
+                    <p class="about-parking__card_text-2">на объекте обеспечивается Федеральной службой
+                        войск национальной гвардии России</p>
+                    <div class="parking__icon_container">
+                        <img src="./assets/icon/Vector (2).svg" alt="icon" class="about-parking-icon">
+                    </div>
+                </div>
+                <div class="about-parking__card_item">
+                    <p class="card__title">Более 20</p>
+                    <p class="about-parking__card_text-1">камер и периметральная охранная сигнализация</p>
+                    <div class="parking__icon_container">
+                        <img src="./assets/icon/Vector (1).svg" alt="icon" class="about-parking-icon">
+                    </div>
+                </div>
+                <div class="about-parking__card_item-checked">
+                    <p class="card__title_checked">Забронируйте место на парковке</p>
+                    <button class="about-parking__button">Забронировать</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="show" class="show">
+        <div class="show__img">
+            <img src="./assets/images/Frame 429.png" alt="Онлайн трансляция с парковки" class="show_container-cards">
+            <img src="./assets/images/Frame 397.png" alt="Фото с парковки с парковки" class="show-card1">
+            <img src="./assets/images/Frame 398.png" alt="Фото с парковки с парковки" class="show-card2">
+            <img src="./assets/images/Frame 400.png" alt="Фото с парковки с парковки" class="show-card2">
+            <img src="./assets/images/Frame 399.png" alt="Фото с парковки с парковки" class="show-card4">
+            <img src="./assets/images/Frame 404.png" alt="Фото с парковки с парковки" class="show-card5">
+            <img src="./assets/images/Frame 403.png" alt="Фото с парковки с парковки" class="show-card6">
+            <img src="./assets/images/Frame 401.png" alt="Фото с парковки с парковки" class="show-card7">
+            <img src="./assets/images/Frame 402.png" alt="Фото с парковки с парковки" class="show-card8">
+        </div>
+        <div class="show__btn">
+            <button class="show__button">Ещё фото &or;</button>
+        </div>
+    </section>
+    <section id="maps" class="maps _container">
+        <div class="maps__content">
+            <h2 class="h2__maps">Где мы находимся</h2>
+            <h3 class="h3__maps">Адрес</h3>
+            <p class="p__maps">Пулковское ш., д. 41, лит. ЗИ, Санкт-Петербург</p>
+            <h3 class="h3__coordinate">Координаты</h3>
+            <p class="p__coordinate">55.58804713; 37.21705019</p>
+            <div class="maps__contacts__wu">
+                <img src="./assets/icon/wp.svg" alt="contacts" class="wp">
+                <p class="p__wu">+7 (921) 000-00-00</p>
+            </div>
+            <div class="maps__contacts__phone">
+              <img src="./assets/icon/phone-call.svg" alt="contacts" class="phone">
+                <p class="p__wu">8 (800) 555-35-35</p>  
+            </div>
+            <button class="maps__button">Найти в Навигаторе</button>
+        </div>
+        <div class="maps__img">
+            <img src="./assets/images/Mask Group.jpg" alt="maps">
+        </div>
+    </section>
+    <div class="wrapper__footer">
+        <footer class="footer">
+            <div class="footer__contacts">
+                <img src="./assets/icon/Vector white.svg" alt="wu" class="white">
+                <p class="p__footer">+7 (921) 000-00-00
+                </p>
+                <p class="p__footer1">Тел. 8 (800) 555-35-35</p>
+            </div>
+                <div class="vector__footer"></div>
+                <div class="crafly">
+                    <p class="crafly">© Carfly 2020</p>
+                    <p class="politika">Политика конфидициальности</p>
+                </div>
+        </footer>
+    </div>
+</body>
+</html>

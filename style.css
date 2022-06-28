@@ -1,0 +1,829 @@
+/* Обнуление */
+*,
+*::before,
+::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/*END*/
+
+
+
+/* Header start*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+:root {
+    --black: #27282B;
+    --h1: #191919;
+    --great-dark: #788195;
+    --dark-white: #DEE4EB;
+    --green: #579D45;
+    --dark-grey: #4D5465;
+    --white: #FFFFFF;
+    --grey: #868FA4;
+}
+
+.header {
+    background-color: var(--white);
+    margin: 0 auto;
+    
+}
+
+._container{
+    max-width: 1400px;
+    margin: 0px auto;
+    padding: 0px 40px;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.menu__link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 0;
+    font-size: 24px;
+    line-height: 32px;
+    cursor: pointer;
+    color: var(--grey);
+    letter-spacing: -2px;
+}
+
+
+.contacts__number {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    cursor: pointer;
+    padding-left: 10px;
+   
+}
+
+.menu__item:not(:last-child){
+    margin: 0px 55px 0px 0px;
+}
+
+.nav_menu {
+    display: flex;
+    padding: 57px;
+    max-width: 1459px;
+    align-items: center;
+    margin: 0 auto;
+    
+    
+}
+
+
+.contacts {
+    display: flex;
+   
+}
+.p_menu {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--black);
+    letter-spacing: -1px;
+}
+
+/*Header END*/
+
+/*Section parking START*/
+
+
+.parking__content {
+   
+  
+}
+    
+.backgraund {
+   background-image: url(./assets/images/Group\ 155.png);   
+   height: 345px;
+   width: 1920px;
+  
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 74px;
+    color: var(--h1);
+    max-width: 666px;
+    padding-top: 72px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 74px;
+    color: var(--h1);
+    max-width: 666px;
+    padding-top: 95px;
+}
+
+.vector {
+    background: #B5C0D9;
+    height: 9px;
+}
+.vector_1 {
+    background: #579D45;
+    opacity: 0.2;
+    height: 2px;
+}
+
+/*Section parking END*/
+
+/*Section price START*/
+
+.price {
+    height: 150px;
+    background-color: var(--white);
+    margin-top: 40px;
+    margin-bottom: 33px;
+}
+
+.price__cards {
+    height: 123px;
+    width: 532px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.price__card_item {
+    width: 133px;
+    height: 76px;
+}
+
+.p__day {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 32px;
+    color: var(--green);
+    margin-bottom: 8px;
+}
+
+.p__price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 36px;
+    color: var(--black);
+}
+
+.price__image {
+    margin-top: -389px;
+
+}
+
+
+/*Section price END*/
+
+/*Section data START*/
+
+.date {
+    max-width: 1400px;
+    height: 93px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.arrival {
+    width: 480px;
+    height: 70px;
+    border: 1px solid var(--great-dark);
+    border-radius: 7px;
+   
+}
+
+.departure {
+    width: 480px;
+    height: 70px;
+    border: 1px solid var(--great-dark);
+    border-radius: 7px;
+}
+
+.find__place {
+    width: 360px;
+    height: 70px;
+    background-color: var(--green);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.find__place:hover{
+    background: white ;
+    color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 7px;
+    
+}
+.find__place:active{
+    background-image: radial-gradient(ellipse farthest-corner at 50% 50%, #fdeaa8,#777);
+        
+}
+
+
+
+.p__date {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+       color: var(--grey);
+    margin-bottom: 11px;
+  
+}
+
+.date__value {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--grey);
+    margin-right: 100px;
+   
+   
+}
+.clock__value{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--grey);
+}
+.date__icon {
+    margin-left: 30px;
+   
+}
+
+/*Section data END*/
+
+/*Section services START*/
+
+.background__services {
+   background-image: url(./assets/images/Frame\ 414.jpg);
+    width: 100%;
+    height: 786px;
+    margin-top: 128px;
+}
+
+.services {
+    margin: 0px auto;
+    padding: 0px 40px;
+    max-width: 1459px;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 74px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 55px;
+}
+
+.tabs__items {
+    display: flex;
+}
+
+.tabs__item {
+    flex:  0 1 33.333%;
+    max-width: 1073px;
+    height: 41px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    color: var(--grey);
+    margin-bottom: 85px;
+}
+
+.tabs__block {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 20px;
+    color: var(--grey);
+    display: none;
+}
+
+.tabs__item:nth-child(1) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    color: var(--grey);
+    
+}
+
+.tabs__item:nth-child(1):active {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    color: var(--green);
+    text-decoration: underline 11px;
+}
+
+.tabs__item:nth-child(2) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    color: var(--grey);
+    
+}
+
+.tabs__item:nth-child(2):active {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    color: var(--green);
+    text-decoration: underline 11px;
+}
+
+.tabs__item:nth-child(3) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    color: var(--grey);
+}
+
+.tabs__item:nth-child(3):active {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    color: var(--green);
+    text-decoration: underline 11px;
+}
+
+
+.tabs__block:target {
+    display: block;
+}
+
+.tab__image {
+    width: 763px;
+    height: 306px;
+}
+
+.tabs__text {
+    max-width: 560px;
+    float: right;
+    margin-top: 50px;
+    margin-right: -15px;
+}
+
+/*Section services END*/
+
+/*Section parking START*/
+
+.about-parking {
+    max-width: 1920px;
+    height: 856px;
+    display: block;
+    max-width: 1459px;
+}
+
+.about-parking__cards_container {
+    max-width: 1400px;
+    max-height: 572px;
+}
+
+
+.about-parking__cards {
+    max-width: 1400px;
+    max-height: 572px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+
+}
+
+.about-parking__card_item {
+    max-width: 440px;
+    height: 266px;
+    background:  #F2F7FC;
+    cursor: pointer;
+    
+}
+
+.card__title {
+    padding: 50px 50px 8px 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 36px;
+    color: #579D45;
+    margin-top: 8px;
+}
+.about-parking__card_text {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    color: #868FA4;
+    margin-bottom: 140px;
+    padding: 0 50px;
+}
+.about-parking__card_text-1{
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    color: #868FA4;
+    margin-bottom: 105px;
+    padding: 0 50px;
+}
+.about-parking__card_text-2{
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    color: #868FA4;
+    margin-bottom: 40px;
+    padding: 0 50px; 
+}
+
+.parking__icon_container {
+    margin-top: -94px;
+    margin-right: 30px;
+}
+
+.about-parking-icon {
+    float: right;
+}
+
+.about-parking__card_item-checked {
+    max-width: 440px;
+    background:  var(--green);
+    cursor: pointer;
+}
+
+.card__title_checked {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    color: var(--white);
+    padding-top: 64px;
+    padding-left: 50px;
+    width: 312px;
+    margin-bottom: 20px;
+}
+
+.about-parking__button {
+    width: 300px;
+    height: 40px;
+    margin-left: 50px;
+    color: var(--green);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.about-parking__button:hover{
+    background: #868FA4 ;
+    color: white;
+}
+.about-parking__button:active{
+        background-image: radial-gradient(ellipse farthest-corner at 50% 50%, #fdeaa8,#777);
+        
+}
+
+
+/*Section parking END*/
+
+/*Section show START*/
+
+.show {
+    max-width: 1400px;
+    height: 796px;
+    margin: 0px auto;
+    padding: 0px 40px;
+    box-sizing: content-box;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+.show__img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 40px; 
+}
+
+.show_container-cards {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+
+}
+
+.show__button {
+    width: 210px;
+    border-radius: 4px;
+    color: var(--green); 
+    margin: 0 auto;
+    display: block;
+    margin-top: 60px;
+    border: 2px solid #579D45;
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #579D45;
+    padding: 18px 40px;
+    margin-top: 60px;
+    cursor: pointer;
+}
+.show__button:hover{
+    background: #6faa60 ;
+    color: white;
+}
+.show__button:active{
+    background-image: radial-gradient(ellipse farthest-corner at 50% 50%, #fdeaa8,#777);
+}
+
+/*Section show END*/
+
+.maps {
+    
+    margin-top: 100px;
+}
+
+.maps__content {
+    max-width: 541px;
+}
+
+.h2__maps {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 74px;
+    color: var(--h1);
+    margin-top: 100px;
+    max-width: 435px;
+    margin-bottom: 20px;
+
+
+}
+
+.h3__maps {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 36px;
+    color: #282E34;
+    margin-bottom: 12px;
+}
+
+.p__maps {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #868FA4;
+    margin-bottom: 9px;
+}
+
+.h3__coordinate {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 36px;
+    color: #282E34;
+    margin-bottom: 12px;
+}
+
+.p__coordinate {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #868FA4;
+    margin-bottom: 40px;
+}
+
+.maps__contacts__wu {
+    display: flex;
+}
+
+.maps__contacts__phone {
+    display: flex;
+}
+
+.wp {
+    width: 24px;
+    height: 24px;
+}
+
+.p__wu {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    color: #868FA4;
+    text-decoration: underline;
+    margin-left: 15px;
+}
+
+.phone {
+    width: 24px;
+    height: 24px;
+}
+
+.maps__img {
+    width: 840px;
+    height: 640px;
+    margin-top: 173px;
+}
+
+.maps__button {
+    width: 336px;
+    border-radius: 4px;
+    color: var(--green); 
+    margin-top: 60px;
+    border: 2px solid #579D45;
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #579D45;
+    padding: 18px 40px;
+    margin-top: 49px;
+    margin-bottom: 115px;
+    cursor: pointer;
+}
+
+.maps__button:hover {
+    background: #6faa60 ;
+    color: white;
+}
+
+.maps__button:active {
+        background-image: radial-gradient(ellipse farthest-corner at 50% 50%, #fdeaa8,#777);  
+}
+
+.wrapper__footer {
+    overflow: hidden;
+    flex-direction: column;
+    margin: 0 auto;
+    background-image: url(./assets/images/Frame\ 410\ \(1\).png);
+}
+
+.footer {
+    max-width: 1400px;
+    margin: 0px auto;
+    padding: 0px 40px;
+    box-sizing: content-box;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__contacts {
+    margin-top: 68px;
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: flex-end
+}
+
+.white {
+    margin-right: 12px;
+}
+
+.p__footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-right: 42px;
+}
+
+.p__footer1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.vector__footer {
+    height: 2px;
+    background: #E0E8F0;
+
+}
+.crafly {
+    margin-bottom: 23px;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F2F7FC;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+.politika {
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F2F7FC;
+    text-decoration: underline;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
